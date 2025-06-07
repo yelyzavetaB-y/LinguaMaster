@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinguaMaster.Web", "LinguaMaster.Web\LinguaMaster.Web.csproj", "{0F9EE005-A754-417C-96F2-41609CC7EED0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92F26F48-D733-4517-9E63-B64D0D38CD7F} = {92F26F48-D733-4517-9E63-B64D0D38CD7F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinguaMaster.Domain", "LinguaMaster.Domain\LinguaMaster.Domain.csproj", "{8CE7BED9-091C-4600-8B4C-A0E85CFBDFB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinguaMaster.Application", "LinguaMaster.Application\LinguaMaster.Application.csproj", "{92F26F48-D733-4517-9E63-B64D0D38CD7F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8CE7BED9-091C-4600-8B4C-A0E85CFBDFB0} = {8CE7BED9-091C-4600-8B4C-A0E85CFBDFB0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinguaMaster.Infrastructure", "LinguaMaster.Infrastructure\LinguaMaster.Infrastructure.csproj", "{CCA2EE1E-5F53-48D3-A7F5-191A0B3AB73D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8CE7BED9-091C-4600-8B4C-A0E85CFBDFB0} = {8CE7BED9-091C-4600-8B4C-A0E85CFBDFB0}
+		{92F26F48-D733-4517-9E63-B64D0D38CD7F} = {92F26F48-D733-4517-9E63-B64D0D38CD7F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F9EE005-A754-417C-96F2-41609CC7EED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9EE005-A754-417C-96F2-41609CC7EED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9EE005-A754-417C-96F2-41609CC7EED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9EE005-A754-417C-96F2-41609CC7EED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE7BED9-091C-4600-8B4C-A0E85CFBDFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE7BED9-091C-4600-8B4C-A0E85CFBDFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE7BED9-091C-4600-8B4C-A0E85CFBDFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE7BED9-091C-4600-8B4C-A0E85CFBDFB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F26F48-D733-4517-9E63-B64D0D38CD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F26F48-D733-4517-9E63-B64D0D38CD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F26F48-D733-4517-9E63-B64D0D38CD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F26F48-D733-4517-9E63-B64D0D38CD7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA2EE1E-5F53-48D3-A7F5-191A0B3AB73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA2EE1E-5F53-48D3-A7F5-191A0B3AB73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA2EE1E-5F53-48D3-A7F5-191A0B3AB73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA2EE1E-5F53-48D3-A7F5-191A0B3AB73D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3C3C80A-89A5-45F0-9010-30703CDC3276}
+	EndGlobalSection
+EndGlobal
